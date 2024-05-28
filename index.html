@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/iconChas.png" type="image/x-icon" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif+Caption:ital@0;1&family=Poppins:wght@300;400;500;700&display=swap");
+  </style>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Conversor Moedas - CloudByte</title>
+</head>
+
+<body>
+  <img class="logo" src="./img/logo_cm.png" alt="logo do conversor" />
+  <main>
+    <label>
+      <p>Converter <b>de:</b></p>
+      <select>
+        <option>R$ Real Brasileiro</option>
+      </select>
+    </label>
+
+    <label>
+      <p>Converter <b>para:</b></p>
+
+      <select class="currency-select">
+        <option value="dolar">US$ Dólar Americano</option>
+        <option value="euro">€ Euro</option>
+        <option value="rubia">₹ Rubia-IND</option>
+        <option value="libra">£ Libra</option>
+        <option value="bitcoin">₿ BitCoin</option>
+      </select>
+    </label>
+
+
+    <label>
+      <p>Valor</p>
+      <input class="input-currency" placeholder="R$ 0,00" />
+    </label>
+
+
+    <button class="convert-button">Converter</button>
+
+    <section>
+      <div class="currency-box">
+        <img src="./img/br.png" alt="Logo moeda p/converter" />
+
+        <p class="currency">Real</p>
+        <p class="currency-value-to-convert">R$ 0,00</p>
+      </div>
+
+      <img class="arrow" src="./img/seta.png" alt="Seta de conversão" />
+
+      <div class="currency-box">
+        <img class="currency-Img" src="./img/usa.png" alt="Logo moeda convertida" />
+
+        <p class="currency" id="currency-name">Dólar</p>
+        <p class="currency-value">US$ 0,00</p>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
